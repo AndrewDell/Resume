@@ -1,83 +1,66 @@
-:root {
-  --primary-color: #007BFF;
-  --secondary-color: #6C757D;
-  --background-color: #F8F9FA;
-  --text-color: #212529;
-  --header-font: 'Arial', sans-serif;
-  --body-font: 'Verdana', sans-serif;
-}
-
-body {
-  margin: 0;
-  font-family: var(--body-font);
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
+/* Hero Section */
 header {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #007BFF, #0056b3);
   color: white;
-  padding: 1rem 0;
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+header h1 {
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
+header p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Section Dividers */
+.section {
+  padding: 3rem 1rem;
+}
+
+.section:nth-child(odd) {
+  background-color: #F8F9FA;
+}
+
+.section:nth-child(even) {
+  background-color: #E9ECEF;
+}
+
+/* Hover Effects */
 nav a:hover {
+  color: #FFD700;
   text-decoration: underline;
 }
 
-.section {
-  padding: 2rem 1rem;
+button:hover {
+  background-color: #0056b3;
+  color: white;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Project Cards */
+.project-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-h1, h2 {
-  font-family: var(--header-font);
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-}
-
-.skills-list li {
-  margin-bottom: 0.5rem;
-}
-
-.experience-item, .project-item {
-  margin-bottom: 2rem;
-}
-
+/* Footer */
 footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
-  padding: 1rem 0;
-  font-size: 0.9rem;
+  padding: 1.5rem 0;
+}
+
+footer p {
+  margin: 0;
 }
